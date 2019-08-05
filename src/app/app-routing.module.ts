@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
     // '**' cualquier path
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
     {path: 'about', component: AboutComponent},
     {path: 'item', component: ItemComponent},
     {path: 'contact', component: ContactComponent},
+    {path: 'seach/:termino', component: SearchComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

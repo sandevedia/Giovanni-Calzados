@@ -1,0 +1,16 @@
+<div  class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+    <a *ngFor="let producto of productosService.productosFiltrado"
+    routerLinkActive="active" routerLink="/item" class="rk-item ae-masonry__item">
+     <!--
+       <img src="..\..\..\assets\data\FOTOS PRODUCTOS\FOTOS HOMBRE\{{producto.nombre}}"  alt="">
+     -->
+     <img *ngIf="producto.nombre.split(' ').length == 4" src="https://firebasestorage.googleapis.com/v0/b/angular-webappportafolio.appspot.com/o/productos%2Fhombre%2FArt%20{{producto.nombre.split(' ')[1]}}%20-%20{{producto.nombre.split(' ')[3]}}?alt=media&token=e8ddea86-7ec1-4160-8a38-7a50ded22dc3" alt="">
+     <img *ngIf="producto.nombre.split(' ').length == 6" src="https://firebasestorage.googleapis.com/v0/b/angular-webappportafolio.appspot.com/o/productos%2Fhombre%2FArt%20{{producto.nombre.split(' ')[1]}}%20-%20{{producto.nombre.split(' ')[3]}}%20-%20{{producto.nombre.split(' ')[5]}}?alt=media&token=4fbd9742-9bb5-401e-8409-7c9d9931d08e" alt="">
+     <!-- https://firebasestorage.googleapis.com/v0/b/angular-webappportafolio.appspot.com/o/productos%2Fhombre%2FArt%20{{producto.nombre.split(' ')[1]}}%20-%20{{producto.nombre.split(' ')[3]}}%20-%20{{producto.nombre.split(' ')[5]}}?alt=media&token=4fbd9742-9bb5-401e-8409-7c9d9931d08e-->
+
+      <div class="item-meta">
+      <h2>Art {{producto.nombre.split(' ')[1]}}</h2>
+      <p>{{producto.nombre.split(' ')[3]}}</p>
+     </div>
+     </a>            
+   </div>

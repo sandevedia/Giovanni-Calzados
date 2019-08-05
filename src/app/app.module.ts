@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './pages/contact/contact.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     AboutComponent,
     ItemComponent,
-    ContactComponent
+    ContactComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
